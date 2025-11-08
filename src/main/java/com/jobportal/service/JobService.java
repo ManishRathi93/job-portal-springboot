@@ -98,4 +98,7 @@ public class JobService {
         return null;
     }
 
+    public List<Job> getJobByEmployerId(Long id){
+        return jobRepository.findByEmployerId(id);
+    }
 }

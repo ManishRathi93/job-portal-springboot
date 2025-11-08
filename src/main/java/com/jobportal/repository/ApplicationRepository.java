@@ -15,7 +15,7 @@ public interface ApplicationRepository extends JpaRepository<Application,Long> {
 
     List<Application> findByApplicant(User applicant);
 
-    List<Application> findAllApplication(Long applicantId);
+//    List<Application> findAllApplication(Long applicantId);
 
     List<Application> findByJob(Job job);
 
@@ -23,7 +23,7 @@ public interface ApplicationRepository extends JpaRepository<Application,Long> {
 
     List<Application> findByStatus(ApplicationStatus status);
 
-    List<Application> findByJobAndStatus(Long jobId, ApplicationStatus status);
+//    List<Application> findByJobAndStatus(Long jobId, ApplicationStatus status);
 
     List<Application> findByApplicantIdAndStatus(Long applicantId, ApplicationStatus status);
 
